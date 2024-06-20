@@ -1,0 +1,66 @@
+/* Maze grid styles */
+.maze-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* Adjust column count and cell size as needed */
+    grid-template-rows: repeat(10, 40px); /* Adjust row count and cell size as needed */
+    grid-gap: 1px; /* Adjust gap between cells as needed */
+    background-color: #fff; /* Background color of maze grid */
+    border: 2px solid #333; /* Border of maze grid */
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.maze-row {
+    display: flex;
+}
+
+.maze-cell {
+    width: 100%;
+    height: 100%;
+    background-color: #eee; /* Default background color of maze cells */
+}
+
+.wall {
+    background-color: #333; /* Color of wall cells */
+}
+
+.path {
+    background-color: #eee; /* Color of path cells */
+}
+
+.rat {
+    background-color: #f00; /* Color of rat character */
+}
+
+.destination {
+    background-color: #0f0; /* Color of destination cell */
+}
+
+/* Game information styles */
+.info {
+    margin-top: 20px; /* Add margin for spacing */
+    text-align: center; /* Center-align game information */
+}
+
+.info p {
+    margin: 5px 0; /* Add margin for spacing between paragraphs */
+}
+
+.game-over, .win {
+    font-weight: bold;
+    color: #f00; /* Color of game over and win messages */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px; /* Add margin for spacing */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for button */
+    transition: background-color 0.3s; /* Smooth transition for button hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
